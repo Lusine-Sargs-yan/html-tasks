@@ -1,0 +1,65 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 640px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: hsla(23, 41%, 65%, 0.1);
+}
+
+nav {
+    display: block; /*none;*/
+    width: 240;
+    margin: 0 auto;
+}
+h1 {
+    color: hsl(222, 23%, 43%);
+    font-size: 48px;
+}
+a {
+    display: inline-block;
+    color: hsl(23, 80%, 50%);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+}
+p{
+    font-size: 16px;
+    padding: 20px 0px;
+}
+/*.bordered {
+    /*border: 2px solid rgba(255, 30, 79, 0.8);*/
+/*}*/
+.quote {
+    font-style: italic;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    /*height: 100px;
+    overflow: scroll;*/
+    text-align: center;
+    background-image: url(https://pixabay.com/images/search/green%20background/);
+
+}
+.rounded {
+    border-radius: 10px;
+}
+.flower-card {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: hsla(23, 40%, 50%, 0.1);
+    border-radius: 10px;
+}
+.flower-image {
+    width: 200px;
+    margin: 0 auto;
+}
+.flowers-container {
+    display: flex;
+    flex-direction: row; /*row-reverse;*/
+    /*border: 1px; solid #ccc;*/
+    flex-wrap: wrap;
+    justify-content: flex-start; /*space-aruond/flex-end/*center;*/
+    *border: 1px solid
+}
