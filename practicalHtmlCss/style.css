@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 640px; /*80%;*/
+    /*min-width: 6640px;*/
+    /*height: 100vh;*/
+    /*overflow: hidden;/*there is no scroll*/
+    width: 640px;
+    margin: 20px auto;
+    background-color: lavenderblush;
+}
+nav {
+    /*width: 240px;*/
+    margin: 0 auto;
+}
+h1 {
+    color: blueviolet;
+    font-size: 48px;
+}
+a {
+    color: hsl(130, 64%, 60%);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+}
+p {
+    font-size: 14px;
+    padding: 20px 10px;
+    /*padding: 20px 10px 10px 20px;*/
+    /*padding-top: 34px;
+    padding-left: 34px;
+    padding-bottom: 34px;
+    padding-right: 15px;*/
+
+}
+/*.bordered {
+    border: 1px solid rgba(183, 228, 22, 0.8)
+}*/
+.quote {
+    font-style: italic;
+    color:#ffffff
+    font-size: 20px;
+    /*height: 100px;
+    overflow: scroll; /*hidden;*/
+    padding: 20px;
+    text-align: center;
+    background-image: url(https://images.unsplash.com/photo-1561016444-14f747499547?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80);
+}
+.rounded {
+    /*width: 200px;
+    height: 200px;*/
+    border-radius: 10px;
+}
+.user-card {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    background-color: hsl(132, 15%, 20%);
+}

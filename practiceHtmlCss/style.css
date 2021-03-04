@@ -26,9 +26,9 @@ p{
     font-size: 16px;
     padding: 20px 0px;
 }
-/*.bordered {
+.bordered {
     /*border: 2px solid rgba(255, 30, 79, 0.8);*/
-/*}*/
+}
 .quote {
     font-style: italic;
     color: #ffffff;
