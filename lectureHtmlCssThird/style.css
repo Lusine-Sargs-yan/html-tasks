@@ -1,0 +1,102 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    max-width: 640px;
+    width: 80%;
+    margin: 20px auto;
+    background-color: hsla(23, 41%, 65%, 0.1);
+}
+
+nav {
+    display: inline-block;/*block; /*none;*/
+    width: 240;
+    margin: 0 auto;
+}
+h1 {
+    color: hsl(222, 23%, 43%);
+    font-size: 48px;
+}
+a {
+    display: inline-block;/*none;/*block;/*inline-block;*/
+    color: hsl(23, 80%, 50%);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 5px;
+}
+p{
+    font-size: 16px;
+    padding: 20px 0px;
+}
+.bordered {
+    border: 2px solid rgba(255, 30, 79, 0.8);*i
+}
+.quote {
+    font-style: italic;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 20px;
+    height: 600px;
+    /*height: 100px;
+    overflow: scroll;*/
+    text-align: center;
+    background-image: url(https://image.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /*contain;*/
+}
+.rounded {
+    border-radius: 10px;
+}
+.flower-card {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+
+    background-color: hsla(23, 40%, 50%, 0.1);
+    border-radius: 10px;
+}
+.flower-image {
+    width: 200px;
+    margin: 0 auto;
+}
+.flowers-container {
+    display: flex;
+    height: 1500px;;
+    flex-direction: row /*column;/* row; /*row-reverse;*/
+    /*border: 1px; solid #ccc;*/
+    flex-wrap: wrap;
+    align-items: center;/*baseline; /*center;*/
+    justify-content: space-between;/*flex-start; /*space-aruond/flex-end/*center;*//*space-evenly*/
+    border: 1px solid #ccc
+}
+.profile-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.profile-description img {
+    order: 1;
+}
+.profile-description p {
+    order: 0;
+    margin: 0;
+    padding: 10px 0;
+    /*color: rebeccapurple;*/
+
+}
+.description-container {
+    width: 60%;
+    max-width: 640px;
+}
+.top {
+    position: fixed;
+    right: 0;/*50%;*/
+    bottom: 0;/*50%;*/
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #923a3a;
+    color: #ffffff;
+}

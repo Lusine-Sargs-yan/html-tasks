@@ -1,0 +1,14 @@
+body {
+  background: #fffffff;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+.logo {
+  color: #9ab;
+}
+.main-header {
+  background: #14191d;
+}
+.main-nav .link {
+  color: #9ab;
+}
