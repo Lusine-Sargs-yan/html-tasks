@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  /* max-width: 640px; */
+  width: 80%;
+  margin: 20px auto;
+  background-color: hsla(23, 80%, 50%, 0.1);
+}
+
+nav {
+  display: block;
+  width: 240px;
+}
+
+h1 {
+  color: hsl(23, 80%, 50%);
+  font-size: 48px;
+}
+
+a {
+  display: inline-block;
+  color: hsl(223, 70%, 59%);
+  font-size: 18px;
+  text-decoration: none;
+  margin: 5px;
+  padding-bottom: 5px;
+}
+
+a:hover {
+  color: hsl(223, 100%, 89%);
+}
+
+p {
+  font-size: 16px;
+  padding: 20px 0px;
+}
+
+.bordered {
+  border: 2px solid rgba(255, 30, 79, 0.8);
+}
+
+.quote {
+  font-style: italic;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  height: 600px;
+  /* height: 100px;
+  overflow: scroll; */
+  text-align: center;
+  background-image: url(https://www.solidbackgrounds.com/images/1920x1080/1920x1080-electric-violet-solid-color-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.user-card {
+  /* width: 250px; */
+  padding: 10px;
+  margin: 10px;
+
+  background-color: hsla(23, 40%, 50%, 0.1);
+  border-radius: 10px;
+}
+
+.user-image {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+}
+
+.profile-desc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-desc p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.profile-desc img {
+  order: 1;
+}
+
+.desc-container {
+  width: 80%;
+  max-width: 640px;
+}
+
+.top {
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+  font-weight: bold;
+
+  background-color: rgba(255, 30, 79, 0.8);
+  color: white;
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.user-card {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.user-card img {
+  transition: 400ms;
+}
+
+.user-card:hover img {
+  transform: rotate(270deg) scale(2);
+  transition: 400ms;
+}
+/*h1 {
+  transform: rotate(270deg) scale(2);
+}*/
+
+.title-container {
+  position: relative;
+}
+
+.fancy-text {
+  transform: rotate(90deg);
+  position: absolute;
+  left: -25px;
+  top: 15px;
+}
+
+.profiles {
+  position: relative;
+  cursor: pointer;
+  color: hsl(223, 70%, 59%);
+  font-size: 20px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  z-index: 1000;
+}
+
+.profiles:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  width: 120px;
+  top: 24px;
+
+  background-color: #fff;
+  opacity: 0.9;
+}
+
+@media screen and (max-width: 615px) {
+  .users-container {
+    justify-content: center;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+}

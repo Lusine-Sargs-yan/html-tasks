@@ -1,0 +1,11 @@
+body {
+  background-color: #d8a3a3;
+}
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  p {
+    color: lightyellow;
+  }
+}
