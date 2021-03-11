@@ -1,14 +1,258 @@
+*{
+  box-sizing: border-box;
+}
 body {
-  background: #fffffff;
+  background: #1d242b;
   font-family: "Roboto", sans-serif;
   margin: 0;
 }
 .logo {
-  color: #9ab;
+  color: #ffffff;
+  margin: 0;
+  margin-right: auto;
+  font-size:  40px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.main-header {
+.header-container {
+  display: flex;
+  align-items: center;
+  height: 72px;
   background: #14191d;
+
 }
+
+.main-header {
+  display: flex;
+  align-items: center;
+}
+
 .main-nav .link {
+  display: flex;
+  flex-direction: row;
   color: #9ab;
+  text-decoration: none;
+  padding:  7px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+}
+.main-nav .link:hover {
+  /*display: flex;*/
+  color: #ffffff;
+}
+
+
+.main-nav {
+  display: flex;
+  margin-right: 20px;
+
+}
+.wrapper {
+  width: 1024px;
+  margin: 0 auto;
+}
+.dot {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #ff8000;
+
+
+}
+.dot:nth-child(2) {
+  position: relative;
+  left: -5px;
+  background: #00e054;
+}
+.dot:nth-child(3) {
+  position: relative;
+  left: -10px;
+  background: #43bbf4;
+}
+.dots {
+  display: flex;
+}
+.main-action {
+  background: #01bd49;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 5px 14px;
+  font-size: 16px;
+
+}
+.main-action:hover {
+  background: #019339;
+}
+.dropdown {
+  width: 80px;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  display: none;
+  flex-direction: column;
+  padding: 7px 0;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: #89a;
+}
+.main-nav .dropdown-container {
+  text-align: center;
+  width: 66px;
+  position: relative;
+  cursor: pointer;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+/*.dropdown-container {
+  padding: 5px  !important;
+  position: relative;
+  cursor: pointer;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}*/
+.dropdown-container:hover {
+  background: #89a;
+}
+.dropdown-container:hover .dropdown {
+  display: flex;
+}
+.dropdown .dropdown-link:hover {
+  background: #678;
+  color: #ffffff;
+}
+.dropdown .dropdown-link {
+  padding: 5px;
+  text-decoration: none;
+  text-align: left;
+  color: #2c3440;
+  font-weight: 500;
+}
+.main {
+  margin-top: 50px;
+}
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+.user-img {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #9ab;
+  /*border: 2px solid #ff8000;
+  padding: 3px;*/
+  border-radius: 50%;
+  cursor: pointer;
+
+
+}
+.user-img:hover {
+  border: 2px solid #ffffff;
+
+}
+.user-description {
+  margin-left: 20px;
+
+}
+.user-title {
+  margin: 5px 0;
+  color: #ffffff;
+  text-transform: lowercase;
+}
+.user-button {
+  background: #678;
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: #9ab;
+  cursor: pointer;
+  font-weight: bold;
+}
+.user-button:hover {
+  color: rgb(174, 194, 213);
+  background: rgb(133, 154, 176);
+
+}
+.statistics {
+  display: flex;
+}
+.statistics p {
+  margin: 0;
+}
+.statistics-item {
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+.statistics-item-value {
+  font-weight: bold;
+  color: #fff;
+  font-size: 32px;
+}
+.statistics-item-description {
+  text-transform: uppercase;
+  color: rgb(174, 194, 213);
+  font-weight: normal;
+  font-size: 12px;
+}
+.user-general-info {
+  display: flex;
+  align-items: center;
+
+}
+.statistics-item:last-child {
+  border-right: 0;
+
+}
+.user-profile-navigation {
+  /*overflow: scroll;*/
+  padding: 0 50px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #23313c;
+  border-right: 2px;
+
+}
+.user-profile-navigation .link {
+  position: relative;
+  padding: 12px 0;
+  text-decoration: none;
+  color: rgb(199, 212, 225);
+}
+.user-profile-navigation .link:hover {
+  color:#43bbf4
+}
+.user-profile-navigation .active {
+  border-bottom: 1px solid #01bd49;
+}
+.active-border {
+  /*content: "";*/
+  position: absolute;
+  background: salmon;
+  width: 25px;
+  height: 2px;
+  bottom: 0;
+  left: 20%;
+}
+.main-info,
+.side-info {
+  border: 1px solid crimson;
+  height: 300px;
+}
+.main-container {
+  font-display: flex;
+  margin: 40px;
+}
+.main-info {
+  width: 70%;
+}
+.side-info {
+  width: 30%;
+  min-width: 220px;
 }
