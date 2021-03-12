@@ -1,0 +1,16 @@
+body {
+  width: 640;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.borderd {
+  border: 1px solid;
+}
+
+.modal {
+  display: none;
+}
+.modal-active {
+  display: block;
+}
