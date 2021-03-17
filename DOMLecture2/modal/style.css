@@ -1,0 +1,36 @@
+.hidden {
+  visibility: hidden;
+} 
+body {
+  background-attachment: rgba(23, 23, 23, 0.5);
+}
+
+.modal {
+  background: #fff;
+  width: 436px;
+  height: 536px;
+  border-radius: 12px;
+  padding: 20px;
+}
+.modal-header {
+
+}
+.modal-body { 
+  padding: 16px;
+}
+.modal-footer {
+  position: relative;
+  bottom: 2px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.primery-button {
+  background: #1edbf9;
+  color: #fff;
+  padding: 8px;
+  border: 1px;
+  border-radius: 4px;
+  margin: 4px;
+  width: 100%;
+}
