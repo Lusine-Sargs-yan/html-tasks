@@ -13,7 +13,7 @@ buttn.addEventListener("click", (event) => {
   //header.textContent = input.value;
   //paragraph.textContent += input.value;
   //paragraph.textContent = input.value;
-  // const createOwnParagraph = document.createElement("p"); // we can create ftml tags using js
+  const createOwnParagraph = document.createElement("p"); // we can create ftml tags using js
   // //in this way we can create any element
   createOwnParagraph.textContent = input.value;
   console.log(createOwnParagraph);
@@ -40,7 +40,7 @@ input.addEventListener("input", (event) => {
 
   // const value = event.target.value;
   // if(event.data === '+' && value.includes('+')) {
-  //   event.target.value = value.slice(0, value - 1);
+  //   event.target.value = value.slice(0, value.length - 1);
   //   return;
   // }
   // const normalizedValue = value.replace('+', '');
@@ -49,7 +49,7 @@ input.addEventListener("input", (event) => {
   // the other task
   const value = event.target.value;
   if (event.data === "+" && value.includes("+")) {
-    event.target.value = value.slice(0, value - 1);
+    event.target.value = value.slice(0, value.length - 1);
     return;
   }
   const normalizedValue = value

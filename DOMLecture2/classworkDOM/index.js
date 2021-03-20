@@ -19,6 +19,17 @@ buttn.addEventListener('click', (event) => {
   searchInput.value = '';
 });
 
+
+let isInEditMode = false;
+list.addEventListener('click', (event) => {
+  if(isInEditMode) {
+    editInput.value = event.target.innerText;
+    event.target.replaceChildden(editInput);
+  }
+  isInEditMode = true;
+});
+
+//the other way
 // list.addEventListener('click', (event) => {
 //   //console.log(event.target.id);
 //   //document.getElementById(event.target.id).remove();
